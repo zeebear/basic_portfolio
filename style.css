@@ -1,0 +1,227 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image:
+        linear-gradient(to right,
+        rgba(247, 236, 237, 0.6),
+        rgba(241, 205, 205, 0.4)),
+        url(assets/img/CompViolin.jpg);
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 68vh);
+    position: relative;
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    text-shadow: 1.5px 1.5px black;
+    animation: moveInLeft 1s ease-out;
+    text-align: center;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px black;
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    /* 60% {
+        transform: rotate(180deg);
+    } */
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.intro {
+    color: black;
+    text-align: left;
+}
+
+iframe {
+    float: right;
+}
+
+p {
+    margin: 10px;
+}
+
+#projects {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.crystal-image {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    float: left;
+    height: 150px;
+}
+
+/* .crystal-image:hover {
+    animation: spinImage 5s ease-in;
+} */
+
+@keyframes spinImage {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+.CrystalCollector {
+    color: black;
+    text-transform: lowercase;
+    padding: 40px;
+}
+
+.violin-image {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    float: right;
+    height: 150px;
+    width: 165px;
+    margin: 10px;
+}
+
+.TriviaGame {
+    color: black;
+    text-transform: lowercase;
+    padding: 40px;
+}
+
+.movie-image {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    float: left;
+    height: 150px;
+    width: 165px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.AmetLocus {
+    color: black;
+    text-transform: lowercase;
+    padding: 40px;
+}
+
+.whiteboard-image {
+    float: right;
+    height: 150px;
+    width: 165px;
+    border-style: solid;
+    border-color: black 2px;
+    margin: 10px;
+    padding: 1px;
+}
+
+.Whiteboard {
+    color: black;
+    text-transform: lowercase;
+    padding: 40px;
+}
+
+footer {
+    text-align: center;
+    background-image:
+        linear-gradient(to right,
+        rgba(204, 157, 238, 1),
+        rgba(29, 5, 46, 1));
+    color: #777;
+    height: 60px;
+    padding: 15px;
+}
+
+.links:link {
+    color: white;
+}
+
+.links:visited {
+    color: white;
+}
+
+.links:hover {
+    color: red;
+}
