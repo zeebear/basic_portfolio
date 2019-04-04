@@ -128,13 +128,12 @@ p {
 }
 
 #projects {
-    padding-top: 80px;
+    padding-top: 40px;
     text-align: center;
 }
 
 #projects-wip {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     text-align: center;
     color: black;
 }
