@@ -133,7 +133,7 @@ p {
 }
 
 #projects-wip {
-    padding: 80px auto;
+    padding-top, padding-bottom: 80px;
     text-align: center;
     color: black;
 }
