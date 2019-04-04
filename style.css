@@ -132,6 +132,12 @@ p {
     text-align: center;
 }
 
+#projects-wip {
+    padding: 80px auto;
+    text-align: center;
+    color: black;
+}
+
 .crystal-image {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     float: left;
